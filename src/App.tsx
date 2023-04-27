@@ -16,7 +16,7 @@ function App() {
     const newObstacles: Position[] = [];
     for (let i = 0; i < 10; i++) {
       const x = Math.random() * 10 - 5;
-      const y = Math.random() * 10 - 5;
+      const y = 0;
       const z = Math.random() * 10 - 5;
       newObstacles.push([x, y, z]);
     }
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Canvas camera={{ position: [1, 2, 5] }}>
+      <Canvas camera={{ position: [-10, 7, 3] }}>
         <Suspense fallback={<Loader />}>
           <Ball floor={ref} />
 
